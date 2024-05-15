@@ -228,14 +228,6 @@ CREATE VIEW vw_combined_dims_and_mv AS
 		ON tables_missing_values.table_id = tables_dimensions.table_id;
 SELECT * FROM vw_combined_dims_and_mv;
 
--- Unique (distinct) values:
-SELECT COUNT(DISTINCT(brand_name)) FROM brands;
-SELECT DISTINCT(brand_name) FROM brands ORDER BY brand_name ASC;
-
-SELECT COUNT(DISTINCT(category_name)) FROM categories;
-SELECT DISTINCT(category_name) FROM categories ORDER BY category_name ASC;
-
-
 /*
 	8. Create frequency tables of the cities and states of the table 'customers'. Calculate the Mode 
     of both columns (if multiple Modes, display only one of them).
