@@ -5,11 +5,11 @@
 	Published on ?? ??, 2024
 
 	Note: The database utilized here was obtained from 
-    https://www.kaggle.com/datasets/dillonmyrick/bike-store-sample-database 
-    on Wednesday, May 8, 2024 (CT).
+   	https://www.kaggle.com/datasets/dillonmyrick/bike-store-sample-database 
+    	on Wednesday, May 8, 2024 (CT).
     
-    The owner of the database in Kaggle is Dillon Myrick and it was published 
-    under the conditions that it cannot be used for commercial purposes.
+    	The owner of the database in Kaggle is Dillon Myrick and it was published 
+    	under the conditions that it cannot be used for commercial purposes.
 */ 
 
 /* 
