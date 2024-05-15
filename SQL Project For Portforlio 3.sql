@@ -308,7 +308,7 @@ SELECT ROUND(@dis_max - @dis_min, 2) INTO @dis_range;
 SELECT @dis_min AS Discount_Min, @dis_max AS Discount_Max, @dis_range AS Discount_Range;
 
 /*
-	12. Manually, calculate the mean of the 'tot_amt_per_ord_id' column?
+	12. Manually, calculate the mean of the 'tot_amt_per_ord_id' column.
     
     Confirm your answer is correct utilizing the AVG() MySQL built-in functions.
 */
