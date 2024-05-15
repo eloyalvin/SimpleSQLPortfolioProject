@@ -210,8 +210,8 @@ SELECT * FROM tables_missing_values;
         b. 'table_name' (from 'tables_dimensions')
         c. 'col_name' (from 'tables_missing_values')
         d. 'mv_num' (from 'tables_missing_values')
-        e. 'num_rows' (from 'tables_missing_values')
-        f. 'num_cols' (from 'tables_missing_values')
+        e. 'num_rows' (from 'tables_dimensions')
+        f. 'num_cols' (from 'tables_dimensions')
     
     After completion, display the VIEW's content. 
 */
