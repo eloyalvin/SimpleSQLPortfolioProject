@@ -314,10 +314,10 @@ SELECT @dis_min AS Discount_Min, @dis_max AS Discount_Max, @dis_range AS Discoun
 */
 -- Manual Mean calculation for the 'tot_amt_per_ord_id' column:
 SELECT SUM(tot_amt_per_ord_id) FROM z_prices_and_discounts INTO @sum;
-SET @amt_mean = @sum / @tot_observations;
+SET @amt_mean = ROUND(@sum / @tot_observations, 2);
 SELECT @amt_mean;
 -- Mean calculation for the 'tot_amt_per_ord_id' column utilizing the AVG() functions.
-SELECT AVG(tot_amt_per_ord_id) FROM z_prices_and_discounts;
+SELECT ROUND(AVG(tot_amt_per_ord_id), 2) FROM z_prices_and_discounts;
 
 /*
 	13. Calculate the median of the 'tot_amt_per_ord_id' column.
