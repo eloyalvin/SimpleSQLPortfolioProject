@@ -323,6 +323,7 @@ SELECT ROUND(AVG(tot_amt_per_ord_id), 2) FROM z_prices_and_discounts;
 	13. Calculate the median of the 'tot_amt_per_ord_id' column.
 */
 SELECT COUNT(*) INTO @tot_observations FROM z_prices_and_discounts; -- Gets the count of observations (rows).
+SELECT @tot_observations;
 -- For even number of observations:
 /*
 	In this case, for the even numbers, I started by dividing the count of the total of
