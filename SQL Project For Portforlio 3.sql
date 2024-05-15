@@ -18,8 +18,9 @@
 SHOW DATABASES;
 
 /* 
-	2. Create a new database with the name 'bike_store_db', display again the list of all
-    the existing databases, and then changed to use the database created.
+	2. Create a new database with the name 'bike_store_db', display the list of all 
+    the existing databases again, and then use the 'bike_store_db' database as the 
+    current database for subsequent statements.
 */
 CREATE DATABASE bike_store_db;
 SHOW DATABASES;
