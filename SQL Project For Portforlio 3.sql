@@ -46,7 +46,7 @@ SHOW TABLES;
 
 /* 
 	4. Create a new table with the name 'tables_dimensions' and display its structure. Its 
-    columns and type should be as follows:
+    columns and types should be as follows:
     
 		a. table_id (INTEGER AUTO_INCREMENT) <- Primary Key
         b. table_name (VARCHAR(11) NOT NULL)
