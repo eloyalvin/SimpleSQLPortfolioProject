@@ -275,20 +275,14 @@ CREATE TEMPORARY TABLE z_prices_and_discounts (
 DESCRIBE z_prices_and_discounts;
 
 /*
-	10. Insert into the temporary table 'z_prices_and_discounts' the following information
-    from the table 'order_items':
+	10. Insert into the temporary table 'z_prices_and_discounts' the 'order_id’, 'list_price’, and 
+    ‘discount’ from the 'order_items' table. The columns 'list_price' and 'discount' should be added 
+    as the summation of all the values within their respective columns by each unique 'order_id'. The 
+    'list_price' column's summation should be named 'tot_amt_per_ord_id' and the 'discount' column's 
+    summation should have the name 'tot_dis_per_ord_id'. The data should be ordered by the column 
+    'tot_amt_per_ord_id' before insertion.
     
-		a. 'order_id'
-        b. 'list_price'
-        c. 'discount'
-        
-	The columns 'list_price' and 'discount' should be added as the summation of all the values
-    within their respective columns by each unique 'order_id'. The 'list_price' column summation
-    should be named 'tot_amt_per_ord_id' and the 'discount' column summation should have the
-    name 'tot_dis_per_ord_id'. The data should be ordered by the column 'tot_amt_per_ord_id'
-    before insertion.
-    
-    Later, display the first 10 rows of the temporary table.
+	Display the first 10 rows of the temporary table.
 */
 INSERT INTO z_prices_and_discounts(order_id, tot_amt_per_ord_id, tot_dis_per_ord_id)
 	SELECT 
