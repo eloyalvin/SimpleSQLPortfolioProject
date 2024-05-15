@@ -233,11 +233,23 @@ SELECT * FROM vw_combined_dims_and_mv;
     of both columns (if multiple Modes, display only one of them).
 */
 -- Frequency tables:
-SELECT state, COUNT(*) AS frequency FROM customers GROUP BY state ORDER BY frequency DESC;
-SELECT city, COUNT(*) AS frequency FROM customers GROUP BY city ORDER BY frequency DESC;
+SELECT state, COUNT(*) AS frequency 
+	FROM customers 
+    GROUP BY state 
+    ORDER BY frequency DESC;
+SELECT city, COUNT(*) AS frequency 
+	FROM customers 
+    GROUP BY city 
+    ORDER BY frequency DESC;
 -- Modes:
-SELECT state, COUNT(*) AS frequency FROM customers GROUP BY state ORDER BY frequency DESC LIMIT 1;
-SELECT city, COUNT(*) AS frequency FROM customers GROUP BY city ORDER BY frequency DESC LIMIT 1;
+SELECT state, COUNT(*) AS frequency 
+	FROM customers 
+    GROUP BY state 
+    ORDER BY frequency DESC LIMIT 1;
+SELECT city, COUNT(*) AS frequency 
+	FROM customers 
+    GROUP BY city 
+    ORDER BY frequency DESC LIMIT 1;
 
 /* 
 	9. Create a temporary table with the name 'z_prices_and_discounts' and display its structure. 
