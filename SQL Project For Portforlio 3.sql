@@ -310,7 +310,7 @@ SELECT @dis_min AS Discount_Min, @dis_max AS Discount_Max, @dis_range AS Discoun
 /*
 	12. Manually, calculate the mean of the 'tot_amt_per_ord_id' column.
     
-    Confirm your answer is correct utilizing the AVG() MySQL built-in functions.
+    Confirm your answer is correct utilizing the AVG() SQL built-in functions.
 */
 -- Manual Mean calculation for the 'tot_amt_per_ord_id' column:
 SELECT SUM(tot_amt_per_ord_id) FROM z_prices_and_discounts INTO @sum;
