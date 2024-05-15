@@ -371,7 +371,6 @@ SELECT @mid_idx;
 */
 SET @idx_uneven = @mid_idx;
 SELECT tot_amt_per_ord_id FROM z_prices_and_discounts WHERE idx = @idx_uneven INTO @median_uneven;
-SELECT @idx_uneven;
 SELECT ROUND(@median_uneven, 2);
 
 /*
