@@ -67,7 +67,7 @@ DESCRIBE tables_dimensions;
 
 /*
 	5. Insert into the 'tables_dimensions' table the names of each of the original tables, with
-    the number or rows and columns of each tables. Display the content of the 'tables_dimensions'
+    the number or rows and columns of each table. Display the content of the 'tables_dimensions'
     table after inserting the data.
 */
 INSERT INTO tables_dimensions (table_name, num_rows, num_cols)
