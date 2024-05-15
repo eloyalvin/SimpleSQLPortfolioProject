@@ -2,7 +2,11 @@
 	SQL Portfolio Project III
 	Utilizing MySQL and MySQL Workbench
 	Created by Eloy Alvin Luna 
-	Published on ?? ??, 2024
+	Published on May 15, 2024
+
+	SQL Portfolio Project III, Utilizing MySQL and MySQL Workbench © 2024 by 
+	Eloy Alvin Luna is licensed under Creative Commons Attribution-NonCommercial 
+	4.0 International.
 
 	Note: The database utilized here was obtained from 
    	https://www.kaggle.com/datasets/dillonmyrick/bike-store-sample-database 
