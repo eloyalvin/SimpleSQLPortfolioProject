@@ -202,10 +202,11 @@ DESCRIBE tables_missing_values;
 SELECT * FROM tables_missing_values;
 
 /*
-	7. Create a VIEW named 'vw_combined_dims_and_mv' with combined information from the two newly created tables. Join 
-    the information of the table 'tables_missing_values' with the information of the table 'tables_dimensions' using the 
-    'table_id' field. The VIEW columns should be as follows:
-		a. 'table_id' (from 'tables_missing_values')
+	7. Create a VIEW named 'vw_combined_dims_and_mv'. Make sure you drop any existing VIEW with 
+    that name before creating it. Join the information of the 'tables_missing_values' table with 
+    the information of the 'tables_dimensions' table using the 'table_id' field. The VIEW columns 
+    should be as follows:
+	a. 'table_id' (from 'tables_missing_values')
         b. 'table_name' (from 'tables_dimensions')
         c. 'col_name' (from 'tables_missing_values')
         d. 'mv_num' (from 'tables_missing_values')
@@ -213,8 +214,6 @@ SELECT * FROM tables_missing_values;
         f. 'num_cols' (from 'tables_missing_values')
     
     After completion, display the VIEW's content. 
-    
-    Note: Make sure you drop any existing VIEW with that name before creating it.
 */
 DROP VIEW IF EXISTS vw_combined_dims_and_mv;
 CREATE VIEW vw_combined_dims_and_mv AS
