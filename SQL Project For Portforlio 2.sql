@@ -1,7 +1,20 @@
-/* SQL Portfolio Project II
-Utilizing MySQL and MySQL Workbench
-Created by Eloy Alvin Luna 
-Published on April 19, 2024*/
+/* 
+	SQL Portfolio Project II
+	Utilizing MySQL and MySQL Workbench
+	Created by Eloy Alvin Luna 
+	Published on April 19, 2024
+
+	SQL Portfolio Project II, Utilizing MySQL and MySQL Workbench © 2024 by 
+	Eloy Alvin Luna is licensed under Creative Commons Attribution-NonCommercial 
+	4.0 International.
+
+	Note: The database utilized here was obtained from 
+   	https://www.kaggle.com/datasets/bhavikjikadara/student-study-performance 
+	on Thursday, April 11, 2024 (CT).
+    
+	The owner of the database is Bhavik Jikadara and it was published under the 
+	license CC BY 4.0 DEED Attribution 4.0 International.
+*/
 
 
 /* 1. Displaying a list of all existing databases.
