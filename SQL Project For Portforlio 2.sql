@@ -17,11 +17,13 @@
 */
 
 
-/* 1. Displaying a list of all existing databases.
+/* 
+	1. Displaying a list of all existing databases.
 */
 SHOW DATABASES;
 
-/* 2. Create a new database and a new table as follows:
+/* 
+	2. Create a new database and a new table as follows:
 		a. The name of the new database should be 'for_practice_db'.
 		b. The table should be named 'study_performance'. The column's names and data type should be:
 */
@@ -42,7 +44,8 @@ CREATE TABLE study_performance (
     );
 SHOW TABLES;
 
-/* 3. Using MySQL Workbench:
+/* 
+	3. Using MySQL Workbench:
 		a. Import the data from the Comma-Separated Value file named 'study_performance.csv'.
 		b. The data from that file needs to be added to the table 'study_performace' (that was 
         previously created) under the database 'for_practice_db'.
@@ -50,7 +53,8 @@ SHOW TABLES;
 */
 -- For the answer of question 3, see the pdf presentation.
 
-/* 4. Create a View, which is essentially a virtual table generated based on a specified query, distinct 
+/* 
+	4. Create a View, which is essentially a virtual table generated based on a specified query, distinct 
 from a Temporary Table:
 		a.Create a view named 'test_results' containing the scores for math, reading, and writing, along 
         with the Study Performance ID. 
@@ -63,7 +67,8 @@ SHOW tables;
 DESCRIBE test_results;
 SELECT * FROM test_results LIMIT 5;
 
-/* 5. Create two new users for the 'for_practice_db' database:
+/* 
+	5. Create two new users for the 'for_practice_db' database:
 		a. Both of these users should only have access to the database named 'for_practice_db'.
 		b. The firs user's name is Marie Hayes and should have all privileges to that database. Use the 
         default password of 'Welcome01'.
@@ -88,7 +93,8 @@ FLUSH PRIVILEGES;
 SELECT * FROM user;
 SHOW GRANTS FOR 'oscar_castro'@'localhost';
 
-/* 6. Remove all Oscar's privileges and delete his user account from MySQL. 
+/* 
+	6. Remove all Oscar's privileges and delete his user account from MySQL. 
 */
 REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'oscar_castro'@'localhost';
 FLUSH PRIVILEGES;
@@ -97,7 +103,8 @@ SHOW GRANTS FOR 'oscar_castro'@'localhost';
 DROP USER 'oscar_castro'@'localhost';
 SELECT * FROM user;
 
-/* 7. Create a backup of the 'for_practice_db' database as follows:
+/* 
+	7. Create a backup of the 'for_practice_db' database as follows:
 		a. All tables, including Views, will need to be part of the backup.
 		b. Export it as a Self-Contained file with the file extension sql.
 		c. Include Create Schema and the some must be in a single transaction.
