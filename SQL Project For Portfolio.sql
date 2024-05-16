@@ -1,7 +1,21 @@
-/* SQL Portfolio Project I
-Utilizing MySQL and MySQL Workbench
-Created by Eloy Alvin Luna 
-Published on April 1, 2024*/
+/* 
+	SQL Portfolio Project I
+	Utilizing MySQL and MySQL Workbench
+	Created by Eloy Alvin Luna 
+	Published on April 1, 2024
+
+	SQL Portfolio Project I, Utilizing MySQL and MySQL Workbench © 2024 by 
+	Eloy Alvin Luna is licensed under Creative Commons Attribution-NonCommercial 
+	4.0 International.
+
+	Note: The database utilized here was obtained from 
+   	https://www.kaggle.com/datasets/rizwanali324/clinic-case-study-dataset 
+    	on Monday, March 11, 2024 (CT).
+    
+    	The owner of the database is Rizwan Ali, and it was published under the license 
+	CC0: Public Domain license.
+
+*/
 
 SHOW DATABASES;
 USE clinic_analysis_db;
